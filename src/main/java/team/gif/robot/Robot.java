@@ -152,8 +152,7 @@ public class Robot extends TimedRobot {
 
     autoTab = Shuffleboard.getTab("PreMatch");
 
-    autoModeChooser.addOption("Mobility", autoMode.MOBILITY);
-    autoModeChooser.setDefaultOption("6 Ball Auto", autoMode.MOBILITY);
+    autoModeChooser.setDefaultOption("Mobility", autoMode.MOBILITY);
 
     autoTab.add("Auto Select",autoModeChooser)
             .withWidget(BuiltInWidgets.kComboBoxChooser)
